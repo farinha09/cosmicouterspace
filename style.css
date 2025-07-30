@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
-    font-size: 30px; /* <-- Add or change this for base font size */
+    font-size: 60px; /* <-- Add or change this for base font size */
     background-image: url('images/sterne_blau2.jpg'); /* <--- Change this to your image path */
     background-size: cover; /* This makes the image cover the entire background */
     background-position: center; /* This centers the image */
@@ -139,10 +139,21 @@ body {
     transform: scale(0.95); /* ADDED: Shrink by 5% */
 }
 
+/* Responsive Design for Phone Version */
+@media (max-width: 1100px) {
+    .container {
+        font-size: 30px;
+    }
+
+    .sidebar {
+        font-size: 30px;
+    }
+}
 
 /* Responsive Design for Phone Version */
 @media (max-width: 768px) {
     .container {
+        font-size: 30px;
         flex-direction: column;
         padding-left: 0; /* Reset padding for mobile */
         min-height: auto; /* Allow height to collapse */
@@ -150,6 +161,7 @@ body {
     }
 
     .sidebar {
+        font-size: 30px;
         position: relative; /* Change back to relative positioning for mobile */
         width: 100%; /* Full width on phone */
         height: auto; /* Auto height */
