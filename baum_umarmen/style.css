@@ -65,6 +65,10 @@ body {
     text-decoration: underline;
 }
 
+a:visited {
+    color: black;
+}
+
 /* MODIFIED for grid layout */
 .image-grid {
     display: grid; /* Enable CSS Grid */
