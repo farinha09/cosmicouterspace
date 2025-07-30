@@ -43,8 +43,8 @@ body {
 }
 
 .arrow-button img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: block;
     transition: filter 0.2s ease, transform 0.2s ease;
 }
@@ -194,7 +194,7 @@ a:visited {
         font-size: 1em;
     }
     .arrow-button img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
