@@ -63,7 +63,9 @@ body {
     line-height: 1; /* This is crucial for tight vertical spacing */
     font-weight: normal;
     order: 2; /* Keep this as 2 based on your previous state */
-    color: red;
+    display: inline-block; /* Essential so border only applies to content width */
+    border-bottom: 5px solid #000; /* Adjust '3px' for thickness, and '#000' for color */
+    padding-bottom: 2px; /* Optional: Adjust space between text and underline */
 }
 
 .sidebar nav {
@@ -196,6 +198,9 @@ body {
         margin-bottom: -30px;
         white-space: normal; /* Allow text to wrap again */
         order: 0; /* NEW: Reset to default order for mobile */
+        display: inline-block; /* Essential so border only applies to content width */
+        border-bottom: 5px solid #000; /* Adjust '3px' for thickness, and '#000' for color */
+        padding-bottom: 2px; /* Optional: Adjust space between text and underline */
     }
 
     .sidebar nav {
