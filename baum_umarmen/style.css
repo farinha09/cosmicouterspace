@@ -15,8 +15,7 @@ body {
 
 .header {
     display: flex;
-    /* Changed to center overall content, then push side items out */
-    justify-content: space-between; /* ALIGNMENT CHANGE */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -24,7 +23,7 @@ body {
 .header-left {
     font-size: 1.2em;
     line-height: 1.4;
-    margin-right: auto; /* Pushes this item to the left edge and others away */ /* NEW */
+
     align-self: flex-start; /* This line was added */
 }
 
