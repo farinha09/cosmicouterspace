@@ -6,17 +6,17 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     margin: 20px;
     background-color: #fff;
     color: #000;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .header {
     display: flex;
     /* Changed to center overall content, then push side items out */
-    justify-content: center; /* ALIGNMENT CHANGE */
+    justify-content: space-between; /* ALIGNMENT CHANGE */
     align-items: center;
     margin-bottom: 20px;
 }
@@ -25,12 +25,11 @@ body {
     font-size: 1.2em;
     line-height: 1.4;
     margin-right: auto; /* Pushes this item to the left edge and others away */ /* NEW */
+    align-self: flex-start; /* This line was added */
 }
 
 .header-right {
-    /* No longer needs margin-left: auto here if header-left has margin-right: auto */
-    /* If you want header-right to be absolutely at the far right, keep this: */
-    margin-left: auto; /* Pushes this item to the right edge and others away */ /* NEW */
+    align-self: flex-start; /* Aligns the button to the top within its flex item */
 }
 
 /* NEW STYLES ADDED FOR THE IMAGE BUTTON */
