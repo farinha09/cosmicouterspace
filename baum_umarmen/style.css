@@ -22,6 +22,7 @@ body {
     margin-left: auto;
 }
 
+/* NEW STYLES ADDED FOR THE IMAGE BUTTON */
 .arrow-button {
     display: block;
     border: none;
@@ -29,8 +30,7 @@ body {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    /* Add transition for both filter and transform properties */
-    transition: color 0.2s ease;
+    transition: color 0.2s ease; /* Changed from opacity to color transition */
 }
 
 .arrow-button img {
@@ -41,21 +41,23 @@ body {
     transition: filter 0.2s ease, transform 0.2s ease;
 }
 
+/* Modify this rule for the hover effect */
 .arrow-button:hover img {
     /* This filter makes the image red. You might need to adjust the values
-       depending on the original color of your SVG and the exact shade of red you want.
-       This is a common way to tint an image. */
+       depending on the original color of your SVG and the exact shade of red you want. */
     filter: invert(19%) sepia(97%) saturate(7400%) hue-rotate(357deg) brightness(98%) contrast(120%);
+    /* Add this line to make the image shrink on hover */
     transform: scale(0.9); /* Shrinks the image to 90% of its original size */
 }
 
+
 .youtube-link {
-    font-size: 30px;
+    font-size: 1.1em;
     margin-bottom: 20px;
-    /* Removed text-align: center; */
-    margin-left: 50px; /* Push it to the right as much as possible */
-    margin-right: auto; /* Push it to the left as much as possible, centering it */
-    align-self: center; /* Align it vertically in the middle of the flex container item if header had height*/
+    margin-left: auto; /* Centers the div within the flex container */
+    margin-right: auto; /* Centers the div within the flex container */
+    text-align: center; /* Centers the text (link) horizontally within its own box */
+    align-self: center;
 }
 
 .youtube-link a {
@@ -63,22 +65,22 @@ body {
     text-decoration: underline;
 }
 
-a:visited {
-    color: black;
-}
-
+/* MODIFIED for grid layout */
 .image-grid {
     display: grid; /* Enable CSS Grid */
-    grid-template-columns: repeat(3, 1fr);
+    /* Set up for 3 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 20px; /* Space between images */
     width: 100%;
     height: auto;
 }
 
 .image-grid img {
-    width: 100%;
+    width: 100%; /* Make images fill their grid cell */
     height: auto;
     display: block;
+    object-fit: cover; /* Ensures images cover their area without distortion */
+    cursor: pointer; /* Indicate that images are clickable */
 }
 
 .footer-arrows {
@@ -86,6 +88,48 @@ a:visited {
     justify-content: flex-end;
     margin-top: 20px;
 }
+
+/* --- NEW STYLES FOR FULLSCREEN MODAL --- */
+.fullscreen-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Ensures the image fits within the modal without cropping */
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* --- END NEW STYLES FOR FULLSCREEN MODAL --- */
+
 
 /* Media Query for smaller screens (e.g., phones) */
 @media (max-width: 768px) { /* Adjust this breakpoint as needed */
@@ -105,12 +149,15 @@ a:visited {
     }
 
     .youtube-link {
-        text-align: center; /* Center the link */
+        text-align: center; /* Center the link for mobile when flex-direction is column */
+        margin-left: 0; /* Reset margins for mobile */
+        margin-right: 0; /* Reset margins for mobile */
         font-size: 1em; /* Slightly smaller font for mobile */
     }
 
     .image-grid {
-        grid-template-columns: 1fr; /* Stack images in a single column */
+        /* Keep as a single column for smaller screens */
+        grid-template-columns: 1fr;
     }
 
     .footer-arrows {
