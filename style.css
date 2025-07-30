@@ -14,10 +14,7 @@ body {
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
     background-attachment: fixed; /* (Optional) This makes the background image fixed when scrolling */
-
     color: #03FF2C; /* Text color */
-    /* REMOVED: overflow: hidden; */ /* Allows potential scroll if content exceeds viewport */
-    /* REMOVED: display: flex; justify-content: center; align-items: center; */ /* Container will handle main content positioning */
     min-height: 100vh; /* Full viewport height */
     position: relative; /* For star positioning */
 }
