@@ -1,13 +1,19 @@
 @font-face {
-    font-family: 'custom_font'; /* Choose a name for your font */
+    font-family: 'vcr_font'; /* Choose a name for your font */
     src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Path to your TTF file */
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+}
+@font-face {
+    font-family: 'written_font'; /* Choose a name for your font */
+    src: url('fonts/X_diff_PressStart2P-Regular_2.ttf') format('truetype'); /* Path to your TTF file */
     font-weight: normal; /* Adjust as needed */
     font-style: normal; /* Adjust as needed */
 }
 
 body {
     margin: 0;
-    font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
+    font-family: 'vcr_font', monospace; /* A monospace font fits the aesthetic */
     font-size: 60px; /* <-- Add or change this for base font size */
     background-image: url('images/version1.jpg'); /* <--- Change this to your image path */
     background-size: cover; /* This makes the image cover the entire background */
@@ -57,6 +63,7 @@ body {
     line-height: 1; /* This is crucial for tight vertical spacing */
     font-weight: normal;
     order: 2; /* Keep this as 2 based on your previous state */
+    color: red;
 }
 
 .sidebar nav {
@@ -94,8 +101,8 @@ body {
 
 .sidebar .button:hover {
     /*background-color: rgba(0, 0, 0, 0);*/
-    color: rgba(255, 255, 255, 0.31); /* Dark text on hover for contrast */
-    transform: scale(0.80); /* ADDED: Shrink by 5% */
+    /* color: rgba(255, 255, 255, 0.31); /* Dark text on hover for contrast */
+    transform: scale(0.88); /* ADDED: Shrink by 5% */
 }
 
 /* Main Content Area */
@@ -135,7 +142,7 @@ body {
     /*background-color: #f51616;*/
     /* color: rgba(255, 255, 255, 0.31); */
     font-size: 60px; /* <-- Add or change this */
-    transform: scale(0.9); /* ADDED: Shrink by 5% */
+    transform: scale(0.88); /* ADDED: Shrink by 5% */
 }
 
 /* Responsive Design for Phone Version */
@@ -145,8 +152,17 @@ body {
     }
 
     .sidebar {
-        font-size: 40px;
+        font-size: 30px;
     }
+
+    .sidebar nav {
+        top: 16px;
+    }
+
+    .item-link:hover {
+        font-size: 40px; /* <-- Add or change this */
+    }
+
 }
 
 /* Responsive Design for Phone Version */
@@ -170,12 +186,14 @@ body {
         border-right: none;
         flex-direction: column;
         /* border-bottom: 2px solid #03FF2C; Horizontal border for mobile */
-        align-items: center;
-        padding: 10px;
+        align-items: flex-start;
+        padding: 16px;
+        margin-bottom: 8%;
     }
 
     .sidebar h1 {
-        margin-bottom: 10px;
+        font-size: 30px;
+        margin-bottom: -30px;
         white-space: normal; /* Allow text to wrap again */
         order: 0; /* NEW: Reset to default order for mobile */
     }
@@ -183,6 +201,11 @@ body {
     .sidebar nav {
         order: 0; /* NEW: Reset to default order for mobile */
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+    }
+
+    .sidebar .button {
+        font-size: 30px; /* Adjust this value to your desired smaller size */
+        padding: 0px;
     }
 
     .sidebar nav ul {
@@ -209,6 +232,10 @@ body {
         display: block;
         width: fit-content;
         margin: 0;
+    }
+
+    .item-link:hover {
+        font-size: 40px; /* <-- Add or change this */
     }
 
     body::before,
