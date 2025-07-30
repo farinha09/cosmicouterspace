@@ -9,12 +9,12 @@ body {
     margin: 0;
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     font-size: 60px; /* <-- Add or change this for base font size */
-    background-image: url('images/sterne_blau2.jpg'); /* <--- Change this to your image path */
+    background-image: url('images/version1.jpg'); /* <--- Change this to your image path */
     background-size: cover; /* This makes the image cover the entire background */
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
     background-attachment: fixed; /* (Optional) This makes the background image fixed when scrolling */
-    color: #03FF2C; /* Text color */
+    color: #000000; /* Text color */
     min-height: 100vh; /* Full viewport height */
     position: relative; /* For star positioning */
 }
@@ -22,7 +22,6 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Max width for desktop content */
     margin: 0 auto;
     box-sizing: border-box;
     /* ADDED padding-left to create space for the rotated sidebar */
@@ -51,13 +50,13 @@ body {
    }
 
 .sidebar h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 0;
     color: #000; /* Should already be black */
     white-space: nowrap; /* ADDED: Prevent text from wrapping */
     line-height: 1; /* Helps with tight vertical spacing */
     font-weight: normal; /* NEW: Makes the text not bold */
-    background-color: #03FF2C; /* NEW: Green background for the h1 text */
+    /*background-color: #1d12ff;*/ /* NEW: Green background for the h1 text */
     order: 2; /* NEW: This will make the h1 appear second */
 }
 
@@ -83,16 +82,16 @@ body {
     display: inline-block;
     padding: 5px 10px;
     text-decoration: none;
-    color: #03FF2C;
+    color: #000000;
     background-color: transparent;
-    font-size: 30px; /* <-- Add or change this */
+    font-size: 50px; /* <-- Add or change this */
     /* REMOVED: border: 1px solid #03FF2C; */ /* No border for email/cv buttons */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar .button:hover {
-    background-color: #03FF2C;
-    color: #000; /* Dark text on hover for contrast */
+    /*background-color: rgba(0, 0, 0, 0);*/
+    color: rgba(255, 255, 255, 0.31); /* Dark text on hover for contrast */
     transform: scale(0.80); /* ADDED: Shrink by 5% */
 }
 
@@ -101,9 +100,9 @@ body {
     flex-grow: 1; /* Takes up remaining space */
     padding: 20px;
     /* Adjusted margin-left to accommodate sidebar's new rotated width:
-       Sidebar height (50px) + 2 * horizontal padding (15px * 2 = 30px) = 80px effective width.
+       Sidebar height (50px) + 2F51616FF * horizontal padding (15px * 2 = 30px) = 80px effective width.
        Adding a bit extra for clear separation. */
-    margin-left: 90px; /* NEW: Adjust this value as needed based on exact visual spacing */
+    margin-left: 200px; /* NEW: Adjust this value as needed based on exact visual spacing */
 
 }
 
@@ -122,7 +121,7 @@ body {
 
 .item-link {
     text-decoration: none;
-    color: #03FF2C;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     padding: 2px 5px; /* Smaller padding for inline links */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -130,27 +129,27 @@ body {
 }
 
 .item-link:hover {
-    background-color: #03FF2C;
-    color: #000;
-    font-size: 30px; /* <-- Add or change this */
-    transform: scale(0.95); /* ADDED: Shrink by 5% */
+    /*background-color: #f51616;*/
+    /* color: rgba(255, 255, 255, 0.31); */
+    font-size: 60px; /* <-- Add or change this */
+    transform: scale(0.9); /* ADDED: Shrink by 5% */
 }
 
 /* Responsive Design for Phone Version */
 @media (max-width: 1100px) {
     .container {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .sidebar {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
 /* Responsive Design for Phone Version */
 @media (max-width: 768px) {
     .container {
-        font-size: 30px;
+        font-size: 40px;
         flex-direction: column;
         padding-left: 0; /* Reset padding for mobile */
         min-height: auto; /* Allow height to collapse */
