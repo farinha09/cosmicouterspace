@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'custom_font'; /* Choose a name for your font */
+    src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Path to your TTF file */
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+}
+
 body {
     margin: 0;
-    font-family: monospace; /* A monospace font fits the aesthetic */
+    font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     font-size: 30px; /* <-- Add or change this for base font size */
     background-image: url('images/sterne_blau2.jpg'); /* <--- Change this to your image path */
     background-size: cover; /* This makes the image cover the entire background */
