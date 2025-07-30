@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: monospace; /* A monospace font fits the aesthetic */
+    font-size: 30px; /* <-- Add or change this for base font size */
+    background-image: url('images/sterne_blau2.jpg'); /* <--- Change this to your image path */
+    background-size: cover; /* This makes the image cover the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed; /* (Optional) This makes the background image fixed when scrolling */
+
+    color: #03FF2C; /* Text color */
+    /* REMOVED: overflow: hidden; */ /* Allows potential scroll if content exceeds viewport */
+    /* REMOVED: display: flex; justify-content: center; align-items: center; */ /* Container will handle main content positioning */
+    min-height: 100vh; /* Full viewport height */
+    position: relative; /* For star positioning */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Max width for desktop content */
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* ADDED padding-left to create space for the rotated sidebar */
+    padding-left: 0; /* Adjust this value based on the sidebar's rotated height */
+    position: relative; /* So children inside can be positioned relative to it if needed */
+    min-height: 100vh; /* Ensure container takes full height for positioning */
+}
+
+/* Sidebar for Desktop */
+.sidebar {
+    position: fixed; /* Take out of flow for precise positioning */
+    top: 0;
+    left: 0; /* Position at the top-left of its containing parent */
+    /* width: 100vh;  Make its width equal to the viewport height (effectively its new height) */
+    height: 100px; /* This will be its width after rotation, adjust as needed */
+    padding: 20px 15px 0 15px; /* NEW: Added 20px padding to the top (before rotation) */
+    display: flex;
+    flex-direction: row; /* NEW: Arrange h1 and nav horizontally within the sidebar */
+    justify-content: flex-start; /* Align content to the start of the row */
+    align-items: center; /* Vertically center content within the 50px height */
+    gap: 20px; /* Space between "GABRIELA CUDMANI" and the "email cv" buttons */
+    transform-origin: top left; /* Pivot point for rotation */
+    transform: rotate(-90deg) translateX(-100%); /* Rotate and then translate back */
+    z-index: 10; /* Ensure it stays above other content if necessary */
+     /* height: 60px;This determines the "thickness" of the sidebar */
+   }
+
+.sidebar h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000; /* Should already be black */
+    white-space: nowrap; /* ADDED: Prevent text from wrapping */
+    line-height: 1; /* Helps with tight vertical spacing */
+    font-weight: normal; /* NEW: Makes the text not bold */
+    background-color: #03FF2C; /* NEW: Green background for the h1 text */
+    order: 2; /* NEW: This will make the h1 appear second */
+}
+
+.sidebar nav {
+    order: 1; /* NEW: This will make the nav appear first */
+    margin-top: 0; /* Add some space between title and buttons if removed from h1 */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* ADDED: Use Flexbox for horizontal alignment */
+    gap: 15px;    /* ADDED: Space between the items (adjust as needed) */
+}
+
+.sidebar nav ul li {
+    /* REMOVED: margin-bottom: 10px; (no longer needed with flex gap) */
+    white-space: nowrap;
+}
+
+.sidebar .button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #03FF2C;
+    background-color: transparent;
+    font-size: 30px; /* <-- Add or change this */
+    /* REMOVED: border: 1px solid #03FF2C; */ /* No border for email/cv buttons */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .button:hover {
+    background-color: #03FF2C;
+    color: #000; /* Dark text on hover for contrast */
+    transform: scale(0.80); /* ADDED: Shrink by 5% */
+}
+
+/* Main Content Area */
+.content {
+    flex-grow: 1; /* Takes up remaining space */
+    padding: 20px;
+    /* Adjusted margin-left to accommodate sidebar's new rotated width:
+       Sidebar height (50px) + 2 * horizontal padding (15px * 2 = 30px) = 80px effective width.
+       Adding a bit extra for clear separation. */
+    margin-left: 90px; /* NEW: Adjust this value as needed based on exact visual spacing */
+
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 10px; /* Space between items */
+}
+
+.item-list li {
+    margin-bottom: 5px; /* Adjust vertical spacing */
+}
+
+.item-link {
+    text-decoration: none;
+    color: #03FF2C;
+    background-color: transparent;
+    padding: 2px 5px; /* Smaller padding for inline links */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* NEW: Essential for transform to work reliably on scale */
+}
+
+.item-link:hover {
+    background-color: #03FF2C;
+    color: #000;
+    font-size: 30px; /* <-- Add or change this */
+    transform: scale(0.95); /* ADDED: Shrink by 5% */
+}
+
+
+/* Responsive Design for Phone Version */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-left: 0; /* Reset padding for mobile */
+        min-height: auto; /* Allow height to collapse */
+        margin: 0; /* NEW: Ensure container is not centered on mobile */
+    }
+
+    .sidebar {
+        position: relative; /* Change back to relative positioning for mobile */
+        width: 100%; /* Full width on phone */
+        height: auto; /* Auto height */
+        top: auto;
+        left: 0;
+        transform: none; /* Remove all transforms for mobile */
+        border-right: none;
+        flex-direction: column;
+        /* border-bottom: 2px solid #03FF2C; Horizontal border for mobile */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .sidebar h1 {
+        margin-bottom: 10px;
+        white-space: normal; /* Allow text to wrap again */
+        order: 0; /* NEW: Reset to default order for mobile */
+    }
+
+    .sidebar nav {
+        order: 0; /* NEW: Reset to default order for mobile */
+        flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sidebar nav ul li {
+        white-space: nowrap; /* <--- CONSIDER REMOVING THIS LINE */
+    }
+
+    .content {
+        padding: 10px;
+        margin-left: 0; /* Reset margin for mobile */
+        text-align: left; /* NEW: Align text content to the left */
+    }
+
+    .item-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item-link {
+        display: block;
+        width: fit-content;
+        margin: 0;
+    }
+
+    body::before,
+    body::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    body::before {
+        top: 5%;
+        left: 80%;
+    }
+
+    body::after {
+        bottom: 10%;
+        left: 10%;
+    }
+}
+
