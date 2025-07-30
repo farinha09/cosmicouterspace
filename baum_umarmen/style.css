@@ -10,7 +10,7 @@ body {
     display: flex;
     /* Changed to center overall content, then push side items out */
     justify-content: center; /* ALIGNMENT CHANGE */
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -51,6 +51,7 @@ body {
 
 .youtube-link {
     font-size: 1.1em;
+
     margin-bottom: 20px;
     /* REMOVED: margin-left: auto; and margin-right: auto;
        The parent's justify-content: center; will now center this item. */
@@ -61,6 +62,7 @@ body {
 .youtube-link a {
     color: #000;
     text-decoration: underline;
+    font-style: italic;
 }
 
 a:visited {
