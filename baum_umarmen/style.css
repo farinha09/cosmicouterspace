@@ -69,10 +69,9 @@ a:visited {
 
 /* MODIFIED for grid layout */
 .image-grid {
-    display: grid; /* Enable CSS Grid */
-    /* Set up for 3 columns on larger screens */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px; /* Space between images */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     width: 100%;
     height: auto;
 }
