@@ -59,7 +59,7 @@ body {
    }
 
 .sidebar h1 {
-    font-size: 50px; /* Ensure this is the desired size */
+    font-size: 40px; /* Ensure this is the desired size */
     margin-bottom: 0;
     color: #000;
     white-space: nowrap;
@@ -75,7 +75,7 @@ body {
     order: 1; /* NEW: This will make the nav appear first */
     margin-top: 0; /* Add some space between title and buttons if removed from h1 */
     position: relative;
-    top: 13px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
+    top: 5px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
                 Positive value moves it down. Negative value moves it up. */
 }
 
@@ -88,7 +88,6 @@ body {
 }
 
 .sidebar nav ul li {
-    /* REMOVED: margin-bottom: 10px; (no longer needed with flex gap) */
     white-space: nowrap;
 }
 
@@ -98,9 +97,8 @@ body {
     text-decoration: none;
     color: #000000;
     background-color: transparent;
-    font-size: 50px; /* Make sure this matches h1's font-size */
+    font-size: 40px; /* Make sure this matches h1's font-size */
     line-height: 1; /* Make sure this matches h1's line-height */
-    /* REMOVED: border: 1px solid #03FF2C; */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -161,7 +159,7 @@ body {
     }
 
     .sidebar nav {
-        top: 16px;
+        top: 13px;
     }
 
     .item-link:hover {
@@ -181,7 +179,7 @@ body {
     }
 
     .sidebar {
-        font-size: 30px;
+        font-size: 40px;
         position: relative; /* Change back to relative positioning for mobile */
         width: 100%; /* Full width on phone */
         height: auto; /* Auto height */
@@ -197,7 +195,7 @@ body {
     }
 
     .sidebar h1 {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: -30px;
         white-space: normal; /* Allow text to wrap again */
         order: 0; /* NEW: Reset to default order for mobile */
@@ -209,11 +207,6 @@ body {
     .sidebar nav {
         order: 0; /* NEW: Reset to default order for mobile */
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
-    }
-
-    .sidebar .button {
-        font-size: 30px; /* Adjust this value to your desired smaller size */
-        padding: 0px;
     }
 
     .sidebar nav ul {
@@ -236,14 +229,17 @@ body {
         gap: 5px;
     }
 
-    .item-link {
-        display: block;
-        width: fit-content;
-        margin: 0;
+    .sidebar .button:hover {
+        transform: none; /* Deactivates the scaling effect on hover */
+        background-color: transparent; /* Ensures background color remains unchanged */
+        color: #000000; /* Sets text color back to the default color */
     }
 
     .item-link:hover {
-        font-size: 40px; /* <-- Add or change this */
+        transform: none; /* Deactivates the scaling effect on hover */
+        font-size: 40px; /* Overrides the hover font size and keeps the non-hover size */
+        background-color: transparent; /* Ensures background color remains unchanged */
+        color: #000000; /* Sets text color back to the default color */
     }
 
     body::before,
@@ -266,7 +262,7 @@ body {
 /* Further optimization for very small screens if needed */
 @media (max-width: 390px) {
     .container {
-        font-size: 30px;
+        font-size: 35px;
         flex-direction: column;
         min-height: auto; /* Allow height to collapse */
         overflow-x: hidden;
@@ -274,7 +270,7 @@ body {
     }
 
     .sidebar {
-        font-size: 30px;
+        font-size: 35px;
         position: relative; /* Change back to relative positioning for mobile */
         width: 100%; /* Full width on phone */
         height: auto; /* Auto height */
@@ -290,7 +286,7 @@ body {
     }
 
     .sidebar h1 {
-        font-size: 30px;
+        font-size: 35px;
         margin-bottom: -30px;
         white-space: normal; /* Allow text to wrap again */
         order: 0; /* NEW: Reset to default order for mobile */
@@ -304,54 +300,9 @@ body {
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
     }
 
-    .sidebar .button {
-        font-size: 30px; /* Adjust this value to your desired smaller size */
-        padding: 0px;
-    }
-
-    .sidebar nav ul {
-        display: flex;
-        gap: 20px;
-    }
-
-    .sidebar nav ul li {
-        white-space: nowrap; /* <--- CONSIDER REMOVING THIS LINE */
-    }
-
-    .content {
-        padding: 10px;
-        margin-left: 0; /* Reset margin for mobile */
-        text-align: left; /* NEW: Align text content to the left */
-    }
-
-    .item-list {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .item-link {
-        display: block;
-        width: fit-content;
-        margin: 0;
-    }
-
     .item-link:hover {
-        font-size: 40px; /* <-- Add or change this */
+        font-size: 35px; /* Overrides the hover font size and keeps the non-hover size */
+
     }
 
-    body::before,
-    body::after {
-        width: 100px;
-        height: 100px;
-    }
-
-    body::before {
-        top: 5%;
-        left: 80%;
-    }
-
-    body::after {
-        bottom: 10%;
-        left: 10%;
-    }
 }
