@@ -37,6 +37,7 @@ body {
     padding-left: 0; /* Adjust this value based on the sidebar's rotated height */
     position: relative; /* So children inside can be positioned relative to it if needed */
     min-height: 100vh; /* Ensure container takes full height for positioning */
+    margin-left: -50px;
 }
 
 /* Sidebar for Desktop */
