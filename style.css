@@ -10,6 +10,9 @@
     font-weight: normal; /* Adjust as needed */
     font-style: normal; /* Adjust as needed */
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -265,13 +268,13 @@ body {
     .container {
         font-size: 30px;
         flex-direction: column;
-        padding-left: 0; /* Reset padding for mobile */
         min-height: auto; /* Allow height to collapse */
-        margin: 0; /* NEW: Ensure container is not centered on mobile */
+        overflow-x: hidden;
+
     }
 
     .sidebar {
-        font-size: 20px;
+        font-size: 30px;
         position: relative; /* Change back to relative positioning for mobile */
         width: 100%; /* Full width on phone */
         height: auto; /* Auto height */
