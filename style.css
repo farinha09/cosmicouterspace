@@ -261,11 +261,94 @@ body {
 }
 
 /* Further optimization for very small screens if needed */
-@media (max-width: 480px) {
+@media (max-width: 390px) {
     .container {
         font-size: 30px;
+        flex-direction: column;
+        padding-left: 0; /* Reset padding for mobile */
+        min-height: auto; /* Allow height to collapse */
+        margin: 0; /* NEW: Ensure container is not centered on mobile */
     }
+
+    .sidebar {
+        font-size: 20px;
+        position: relative; /* Change back to relative positioning for mobile */
+        width: 100%; /* Full width on phone */
+        height: auto; /* Auto height */
+        top: auto;
+        left: 0;
+        transform: none; /* Remove all transforms for mobile */
+        border-right: none;
+        flex-direction: column;
+        /* border-bottom: 2px solid #03FF2C; Horizontal border for mobile */
+        align-items: flex-start;
+        padding: 16px;
+        margin-bottom: 8%;
+    }
+
     .sidebar h1 {
         font-size: 30px;
+        margin-bottom: -30px;
+        white-space: normal; /* Allow text to wrap again */
+        order: 0; /* NEW: Reset to default order for mobile */
+        display: inline-block; /* Essential so border only applies to content width */
+        border-bottom: 5px solid #000; /* Adjust '3px' for thickness, and '#000' for color */
+        padding-bottom: 2px; /* Optional: Adjust space between text and underline */
+    }
+
+    .sidebar nav {
+        order: 0; /* NEW: Reset to default order for mobile */
+        flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+    }
+
+    .sidebar .button {
+        font-size: 30px; /* Adjust this value to your desired smaller size */
+        padding: 0px;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sidebar nav ul li {
+        white-space: nowrap; /* <--- CONSIDER REMOVING THIS LINE */
+    }
+
+    .content {
+        padding: 10px;
+        margin-left: 0; /* Reset margin for mobile */
+        text-align: left; /* NEW: Align text content to the left */
+    }
+
+    .item-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item-link {
+        display: block;
+        width: fit-content;
+        margin: 0;
+    }
+
+    .item-link:hover {
+        font-size: 40px; /* <-- Add or change this */
+    }
+
+    body::before,
+    body::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    body::before {
+        top: 5%;
+        left: 80%;
+    }
+
+    body::after {
+        bottom: 10%;
+        left: 10%;
     }
 }
