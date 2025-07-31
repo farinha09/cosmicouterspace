@@ -260,3 +260,12 @@ body {
     }
 }
 
+/* Further optimization for very small screens if needed */
+@media (max-width: 480px) {
+    .container {
+        font-size: 30px;
+    }
+    .sidebar h1 {
+        font-size: 30px;
+    }
+}
