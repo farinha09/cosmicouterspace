@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'custom_font'; /* Choose a name for your font */
+    src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Path to your TTF file */
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+}
+
+body {
+    font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    font-size: 1.2em;
+    line-height: 1.4;
+
+    align-self: flex-start; /* This line was added */
+}
+
+.header-right {
+    align-self: flex-start; /* Aligns the button to the top within its flex item */
+}
+
+/* NEW STYLES ADDED FOR THE IMAGE BUTTON */
+.arrow-button {
+    display: block;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.arrow-button img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.arrow-button:hover img {
+    filter: invert(19%) sepia(97%) saturate(7400%) hue-rotate(357deg) brightness(98%) contrast(120%);
+    transform: scale(0.9);
+}
+
+
+
+/* Media Query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        /* Reset justify-content for column layout */
+        justify-content: flex-start; /* Or initial */
+    }
+
+    .header-left {
+        margin-right: 0; /* Reset for mobile */
+        margin-bottom: 10px;
+    }
+
+    .header-right {
+        margin-left: 0; /* Reset for mobile */
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+
+/* Further optimization for very small screens if needed */
+@media (max-width: 480px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-left {
+        font-size: 1em;
+    }
+}}

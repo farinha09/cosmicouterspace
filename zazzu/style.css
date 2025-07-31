@@ -54,26 +54,6 @@ body {
     transform: scale(0.9);
 }
 
-.youtube-link {
-    font-size: 1.1em;
-
-    margin-bottom: 20px;
-    /* REMOVED: margin-left: auto; and margin-right: auto;
-       The parent's justify-content: center; will now center this item. */
-    text-align: center; /* Still needed to center the text WITHIN the link's box */
-    align-self: center; /* To align vertically if header has more height */
-}
-
-.youtube-link a {
-    color: #000;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-a:visited {
-    color: black;
-}
-
 /* MODIFIED for grid layout */
 .image-grid {
     display: grid;

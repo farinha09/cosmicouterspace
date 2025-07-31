@@ -7,13 +7,17 @@
 
 body {
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
-    margin: 20px;
     background-color: #fff;
     color: #000;
     font-size: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,33 +58,34 @@ body {
     transform: scale(0.9);
 }
 
-.youtube-link {
-    font-size: 1.1em;
-
-    margin-bottom: 20px;
-    /* REMOVED: margin-left: auto; and margin-right: auto;
-       The parent's justify-content: center; will now center this item. */
-    text-align: center; /* Still needed to center the text WITHIN the link's box */
-    align-self: center; /* To align vertically if header has more height */
-}
-
-.youtube-link a {
-    color: #000;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-a:visited {
-    color: black;
-}
-
-/* MODIFIED for grid layout */
-.image-grid {
+.image {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     width: 100%;
     height: auto;
+
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* MODIFIED for grid layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center; /* This is the key property for vertical alignment */
+
 }
 
 .image-grid img {
@@ -90,6 +95,24 @@ a:visited {
     object-fit: cover;
     cursor: pointer;
 }
+
+.small-image-container {
+    background-color: black;
+    width:100%;
+    position: relative;       /* Position it relative to the nearest positioned ancestor (main in this case) */
+    z-index: 1;               /* Make sure it's on top of the full-size background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the small image itself */
+.small-image {
+    max-width: 70%;          /* Ensure the image doesn't overflow its container */
+    height: auto;             /* Maintain the image's aspect ratio */
+    display: block;           /* Remove any extra space below the image */
+}
+
 
 .footer-arrows {
     display: flex;
@@ -138,16 +161,6 @@ a:visited {
 }
 /* --- END NEW STYLES FOR FULLSCREEN MODAL --- */
 
-/* Media Query for typical iPad screen widths (e.g., 768px to 1024px or larger) */
-@media (max-width: 1000px) {
-    .image-grid {
-        grid-template-columns: 1fr; /* 3 columns for landscape iPad */
-        /* If you want 2 rows specifically, you don't need to specify grid-template-rows,
-           as it will auto-arrange based on the number of items and columns.
-           Since you have 6 images, 3 columns will naturally result in 2 rows. */
-    }
-}
-
 /* Media Query for smaller screens (e.g., phones) */
 @media (max-width: 768px) {
     .header {
@@ -187,8 +200,8 @@ a:visited {
 
 /* Further optimization for very small screens if needed */
 @media (max-width: 480px) {
-    body {
-        margin: 10px;
+    .hide-on-mobile {
+        display: none;
     }
     .header-left {
         font-size: 1em;
