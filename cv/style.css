@@ -8,26 +8,36 @@
 body {
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     background-color: #000000;
-    color: #ffffff;
+    color: #15ff00;
     font-size: 30px;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* This ensures the main content takes up the full viewport height */
+}
+
 .header {
-    margin: 20px;
+    margin: 20px auto; /* Centers the header horizontally */
+    max-width: 960px; /* Aligns with the max-w-4xl container of the main text */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
+
 .header-left {
     font-size: 1.2em;
     line-height: 1.4;
-
     align-self: flex-start; /* This line was added */
+    padding-left: 2.5rem;   /* Adds padding to align with the main content's container */
+    padding-right: 1rem;
 }
 
 .header-right {
@@ -61,17 +71,25 @@ body {
 
 /* Media Query for smaller screens (e.g., phones) */
 @media (max-width: 768px) {
+    main {
+    padding-left: 20px;
+}
     .header {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-        /* Reset justify-content for column layout */
         justify-content: flex-start; /* Or initial */
     }
 
     .header-left {
         margin-right: 0; /* Reset for mobile */
         margin-bottom: 10px;
+        padding-left: 0px;   /* Adds padding to align with the main content's container */
     }
 
     .header-right {
