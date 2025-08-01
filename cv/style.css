@@ -44,6 +44,10 @@ main {
     align-self: flex-start; /* Aligns the button to the top within its flex item */
 }
 
+    .year {
+        font-size: 20px;
+    }
+
 /* NEW STYLES ADDED FOR THE IMAGE BUTTON */
 .arrow-button {
     display: block;
@@ -97,6 +101,7 @@ main {
         margin-top: 10px;
         align-self: flex-end;
     }
+
 
 
 /* Further optimization for very small screens if needed */
