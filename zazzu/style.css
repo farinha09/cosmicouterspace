@@ -79,7 +79,7 @@ body {
 
 /* --- NEW STYLES FOR FULLSCREEN MODAL --- */
 .fullscreen-modal {
-    display: flex; /* Added */
+    display: none; /* Added */
     align-items: center; /* Added */
     justify-content: center; /* Added */
     position: fixed;

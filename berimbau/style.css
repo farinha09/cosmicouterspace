@@ -123,6 +123,8 @@ body {
 /* --- NEW STYLES FOR FULLSCREEN MODAL --- */
 .fullscreen-modal {
     display: none;
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
     position: fixed;
     z-index: 1000;
     padding-top: 50px;
