@@ -208,7 +208,11 @@ body {
     .sidebar nav {
         order: 0; /* NEW: Reset to default order for mobile */
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+
     }
+
+
+
 
     .sidebar nav ul {
         display: flex;
@@ -217,6 +221,16 @@ body {
 
     .sidebar nav ul li {
         white-space: nowrap; /* <--- CONSIDER REMOVING THIS LINE */
+    }
+
+    .sidebar .button {
+        padding: 0;
+    }
+
+    .sidebar .button:hover {
+        transform: none; /* Deactivates the scaling effect on hover */
+        background-color: transparent; /* Ensures background color remains unchanged */
+        color: #000000; /* Sets text color back to the default color */
     }
 
     .content {
@@ -230,11 +244,7 @@ body {
         gap: 5px;
     }
 
-    .sidebar .button:hover {
-        transform: none; /* Deactivates the scaling effect on hover */
-        background-color: transparent; /* Ensures background color remains unchanged */
-        color: #000000; /* Sets text color back to the default color */
-    }
+
 
     .item-link:hover {
         transform: none; /* Deactivates the scaling effect on hover */
@@ -299,6 +309,10 @@ body {
     .sidebar nav {
         order: 0; /* NEW: Reset to default order for mobile */
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+    }
+
+    .sidebar .button {
+        font-size: 35px; /* Make sure this matches h1's font-size */
     }
 
     .item-link:hover {
