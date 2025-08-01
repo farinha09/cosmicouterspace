@@ -52,7 +52,7 @@ body {
     flex-direction: row; /* NEW: Arrange h1 and nav horizontally within the sidebar */
     justify-content: flex-start; /* Align content to the start of the row */
     align-items: center; /* Vertically center content within the 50px height */
-    gap: 20px; /* Space between "GABRIELA CUDMANI" and the "email cv" buttons */
+    gap: 8px; /* Space between "GABRIELA CUDMANI" and the "email cv" buttons */
     transform-origin: top left; /* Pivot point for rotation */
     transform: rotate(-90deg) translateX(-100%); /* Rotate and then translate back */
     z-index: 10; /* Ensure it stays above other content if necessary */
@@ -74,7 +74,7 @@ body {
 
 .sidebar nav {
     order: 1; /* NEW: This will make the nav appear first */
-    margin-top: 0; /* Add some space between title and buttons if removed from h1 */
+    margin-top: 10px; /* Add some space between title and buttons if removed from h1 */
     position: relative;
     top: 5px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
                 Positive value moves it down. Negative value moves it up. */
@@ -97,7 +97,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* ADDED: Use Flexbox for horizontal alignment */
-    gap: 15px;    /* ADDED: Space between the items (adjust as needed) */
+    gap: 0px;    /* ADDED: Space between the items (adjust as needed) */
 }
 
 .sidebar nav ul li {
@@ -232,7 +232,7 @@ body {
 
     .sidebar nav ul {
         display: flex;
-        gap: 20px;
+        gap: 5px;
         flex-wrap: wrap;
     }
 
@@ -321,6 +321,7 @@ body {
 
     .sidebar nav {
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
+
     }
 
     .sidebar .button {
