@@ -179,6 +179,7 @@ body {
         margin: 0; /* NEW: Ensure container is not centered on mobile */
     }
 
+
     .sidebar {
         font-size: 40px;
         position: relative; /* Change back to relative positioning for mobile */
@@ -210,9 +211,6 @@ body {
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
 
     }
-
-
-
 
     .sidebar nav ul {
         display: flex;

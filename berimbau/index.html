@@ -21,12 +21,12 @@
     </div>
 
     <main>
-        <div class="image">
-            <img src="images/poster1.jpg" class="full-size-image">
+        <div class="image-grid-one">
+            <img src="images/poster1.jpg" onclick="openFullscreen(this.src)">
         </div>
 
         <div class="image-grid">
-            <img src="images/IMG_1198.PNG">
+            <img src="images/IMG_1198.PNG" onclick="openFullscreen(this.src)">
             <img src="images/text2.png">
         </div>
 
@@ -43,6 +43,8 @@
         <span class="close-button">&times;</span>
         <img class="modal-content" id="img01">
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
