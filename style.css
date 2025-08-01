@@ -80,6 +80,18 @@ body {
                 Positive value moves it down. Negative value moves it up. */
 }
 
+.linkedin-btn {
+    order: 3; /* Places LINKEDIN last */
+}
+
+.email-btn {
+    order: 2; /* Places EMAIL in the middle */
+}
+
+.cv-btn {
+    order: 1; /* Places CV first */
+}
+
 .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -171,12 +183,18 @@ body {
 
 /* Responsive Design for Phone Version */
 @media (max-width: 768px) {
+    body, html {
+        margin-left: -10px;
+        padding: 0;
+    }
+
     .container {
         font-size: 40px;
         flex-direction: column;
-        padding-left: 0; /* Reset padding for mobile */
         min-height: auto; /* Allow height to collapse */
-        margin: 0; /* NEW: Ensure container is not centered on mobile */
+        width: 90%;
+        margin: 0 auto;
+        padding: 0; /* REMOVE PADDING TO AVOID EXTRA SPACE */
     }
 
 
@@ -215,11 +233,9 @@ body {
     .sidebar nav ul {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .sidebar nav ul li {
-        white-space: nowrap; /* <--- CONSIDER REMOVING THIS LINE */
-    }
 
     .sidebar .button {
         padding: 0;
@@ -275,7 +291,6 @@ body {
         flex-direction: column;
         min-height: auto; /* Allow height to collapse */
         overflow-x: hidden;
-
     }
 
     .sidebar {
@@ -305,7 +320,6 @@ body {
     }
 
     .sidebar nav {
-        order: 0; /* NEW: Reset to default order for mobile */
         flex-wrap: wrap; /* NEW: Allows items to wrap to the next line if space is limited */
     }
 

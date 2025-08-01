@@ -56,13 +56,10 @@ body {
 
 .youtube-link {
     font-size: 1.1em;
-
     margin-bottom: 20px;
-    /* REMOVED: margin-left: auto; and margin-right: auto;
-       The parent's justify-content: center; will now center this item. */
     text-align: center; /* Still needed to center the text WITHIN the link's box */
     align-self: center; /* To align vertically if header has more height */
-    word-break: break-all; /* ADD THIS LINE */
+    word-break: break-all;
     overflow-wrap: break-word;
 }
 
