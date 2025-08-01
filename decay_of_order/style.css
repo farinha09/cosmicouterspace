@@ -97,7 +97,9 @@ body {
 
 /* --- NEW STYLES FOR FULLSCREEN MODAL --- */
 .fullscreen-modal {
-    display: none;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
     position: fixed;
     z-index: 1000;
     padding-top: 50px;
@@ -118,24 +120,24 @@ body {
 }
 
 .close-button {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #ffffff;
-
-  /* NEW: Text-based styling */
-  font-size: 70px;
-  font-family: 'custom_font', monospace; /* You can change 'Arial' to any font you prefer */
-
-  cursor: pointer;
-  z-index: 100;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 70px;
+    font-family: 'custom_font', monospace;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.3s;
+    opacity: 0.5;
 }
 
 /* Add a hover effect for the text */
 .close-button:hover,
 .close-button:focus {
-  color: #f51616;
+    color: #f51616;
+    opacity: 1;
+
 }
 
 /* --- END NEW STYLES FOR FULLSCREEN MODAL --- */

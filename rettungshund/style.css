@@ -98,7 +98,9 @@ a:visited {
 
 /* --- NEW STYLES FOR FULLSCREEN MODAL --- */
 .fullscreen-modal {
-    display: none;
+    display: none; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
     position: fixed;
     z-index: 1000;
     padding-top: 50px;
@@ -122,18 +124,20 @@ a:visited {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+    color: #ffffff;
+    font-size: 70px;
+    font-family: 'custom_font', monospace;
     cursor: pointer;
+    z-index: 100;
+    transition: 0.3s;
+    opacity: 0.5;
 }
 
+/* Add a hover effect for the text */
 .close-button:hover,
 .close-button:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+    color: #f51616;
+    opacity: 1;
 }
 /* --- END NEW STYLES FOR FULLSCREEN MODAL --- */
 
