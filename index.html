@@ -12,7 +12,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="loading"></div>
 
     <div class="container">
         <aside class="sidebar">
@@ -50,10 +49,22 @@
     </div>
 
     <script>
-    // JUST RUN LOADER() IF NO SCRIPTS TO LOAD
-    window.addEventListener("DOMContentLoaded", () => loader([
-      "my.CSS", "my.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER.JS"
-    ]));
+    document.addEventListener("DOMContentLoaded", function() {
+        const itemLinks = document.querySelectorAll('.item-list a');
+
+        itemLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const url = this.getAttribute('href');
+
+                showLoader();
+
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 100);
+            });
+        });
+    });
     </script>
 
 </body>
