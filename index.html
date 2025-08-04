@@ -9,8 +9,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div id="loading"></div>
+
     <div class="container">
         <aside class="sidebar">
             <h1>GABRIELA CUDMANI</h1>
@@ -45,6 +48,13 @@
             </ul>
         </main>
     </div>
+
+    <script>
+    // JUST RUN LOADER() IF NO SCRIPTS TO LOAD
+    window.addEventListener("DOMContentLoaded", () => loader([
+      "my.CSS", "my.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER.JS"
+    ]));
+    </script>
 
 </body>
 </html>
