@@ -10,11 +10,13 @@
     font-weight: normal; /* Adjust as needed */
     font-style: normal; /* Adjust as needed */
 }
+
 html {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
+    /* cursor: url('images/cursor_big.png'), auto; */
     margin: 0;
     font-family: 'vcr_font', monospace; /* A monospace font fits the aesthetic */
     font-size: 60px; /* <-- Add or change this for base font size */
@@ -25,8 +27,14 @@ body {
     background-attachment: fixed; /* (Optional) This makes the background image fixed when scrolling */
     color: #000000; /* Text color */
     min-height: 100vh; /* Full viewport height */
-    position: relative; /* For star positioning */
+    position: absolute; /* For star positioning */
 }
+
+/* a { */
+/*  cursor: url('images/pointer_black.png'), pointer; */
+/*   color: #f51616; */
+/*   text-decoration: none; */
+/* }*/
 
 .container {
     display: flex;
@@ -97,7 +105,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* ADDED: Use Flexbox for horizontal alignment */
-    gap: 0px;    /* ADDED: Space between the items (adjust as needed) */
+    gap: 0;    /* ADDED: Space between the items (adjust as needed) */
 }
 
 .sidebar nav ul li {
