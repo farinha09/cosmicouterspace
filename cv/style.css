@@ -5,6 +5,13 @@
     font-style: normal; /* Adjust as needed */
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
 body {
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     background-color: #000000;
@@ -44,9 +51,14 @@ main {
     align-self: flex-start; /* Aligns the button to the top within its flex item */
 }
 
-    .year {
-        font-size: 20px;
-    }
+.year {
+    font-size: 20px;
+}
+
+.text{
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
 
 /* NEW STYLES ADDED FOR THE IMAGE BUTTON */
 .arrow-button {
@@ -76,8 +88,9 @@ main {
 /* Media Query for smaller screens (e.g., phones) */
 @media (max-width: 768px) {
     main {
-    padding-left: 20px;
-}
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .header {
         margin: 20px;
         display: flex;
