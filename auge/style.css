@@ -8,8 +8,8 @@
 body {
     font-family: 'custom_font', monospace; /* A monospace font fits the aesthetic */
     margin: 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -18,12 +18,12 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+
 }
 
 .header-left {
     font-size: 1.2em;
     line-height: 1.4;
-
     align-self: flex-start; /* This line was added */
 }
 
@@ -54,43 +54,82 @@ body {
     transform: scale(0.9);
 }
 
-/* MODIFIED for grid layout */
 .image-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 100%;
-    height: auto;
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line to center the image vertically */
+    height: 100%;
 }
 
 .image-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
+    max-height: calc(100vh - 120px); /* Sets max height to fit the container */
+    width: auto;                    /* Allows the width to scale proportionally */
+    display: inline-block;          /* Change to inline-block for proper horizontal layout */
     object-fit: cover;
     cursor: pointer;
 }
 
-.image-grid-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: center; /* This centers the items horizontally */
-    align-items: center; /* This is the key property for vertical alignment */
-    padding-top: 80px; /* Adds padding above the grid */
+.image-viewer {
+    position: relative;
+    justify-content: center; /* Centers the entire viewer horizontally */
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
 }
 
-.image-grid-2 img {
+.image-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 80vh; /* Adjust as needed to fit the viewport */
+    object-fit: contain;
+}
+
+/* Styling for the navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
     cursor: pointer;
+    z-index: 10;
+    /* Add this to center the buttons with the image */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.next-button {
+    right: 10px;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.prev-button img{
+    left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.next-button img {
+    width: 15px;
+    height: 15px;
+    left: 10px;
+}
+
+/* Footer Arrows */
 .footer-arrows {
     display: flex;
     justify-content: flex-end;
@@ -141,13 +180,15 @@ body {
     opacity: 1;
 
 }
-
 /* --- END NEW STYLES FOR FULLSCREEN MODAL --- */
 
 /* Media Query for typical iPad screen widths (e.g., 768px to 1024px or larger) */
 @media (max-width: 1000px) {
-    .image-grid-2 {
-        grid-template-columns: 1fr;
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 3 columns for landscape iPad */
+        /* If you want 2 rows specifically, you don't need to specify grid-template-rows,
+           as it will auto-arrange based on the number of items and columns.
+           Since you have 6 images, 3 columns will naturally result in 2 rows. */
     }
 }
 
@@ -157,7 +198,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-        /* Reset justify-content for column layout */
         justify-content: flex-start; /* Or initial */
     }
 
@@ -170,13 +210,6 @@ body {
         margin-left: 0; /* Reset for mobile */
         margin-top: 10px;
         align-self: flex-end;
-    }
-
-    .youtube-link {
-        text-align: left;
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 1em;
     }
 
     .image-grid {
@@ -201,3 +234,4 @@ body {
         height: 40px;
     }
 }
+

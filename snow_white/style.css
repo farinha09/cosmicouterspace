@@ -80,15 +80,9 @@ body {
 
 /* Footer Arrows */
 .footer-arrows {
-    position: fixed;     /* Add this line */
-    bottom: 0;           /* Add this line */
-    width: 100%;         /* Add this line */
-    z-index: 100;        /* Add this line */
-    background-color: #000000;
     display: flex;
-    justify-content: space-between; /* Change from 'center' to 'space-between' */
-    align-items: center;
-    padding: 20px;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 /* --- NEW STYLES FOR FULLSCREEN MODAL --- */
