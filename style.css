@@ -133,11 +133,7 @@ body {
 .content {
     flex-grow: 1; /* Takes up remaining space */
     padding: 20px;
-    /* Adjusted margin-left to accommodate sidebar's new rotated width:
-       Sidebar height (50px) + 2F51616FF * horizontal padding (15px * 2 = 30px) = 80px effective width.
-       Adding a bit extra for clear separation. */
     margin-left: 200px; /* NEW: Adjust this value as needed based on exact visual spacing */
-
 }
 
 .item-list {
