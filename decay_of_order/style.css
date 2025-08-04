@@ -71,13 +71,17 @@ body {
     cursor: pointer;
 }
 
-.image-grid-2 {
+.image-grid-2{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center; /* This is the key property for vertical alignment */
+    padding-top: 80px; /* Adds padding above the grid */
+    padding-bottom: 80px; /* Adds padding below the grid */
 }
 
 .image-grid-2 img {
@@ -87,7 +91,6 @@ body {
     object-fit: cover;
     cursor: pointer;
 }
-
 
 .footer-arrows {
     display: flex;
