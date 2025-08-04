@@ -50,10 +50,34 @@
     </div>
 
     <script>
-    // JUST RUN LOADER() IF NO SCRIPTS TO LOAD
-    window.addEventListener("DOMContentLoaded", () => loader([
-      "my.CSS", "my.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER.JS"
-    ]));
+    // This script handles showing the loader on subpage navigation.
+    document.addEventListener("DOMContentLoaded", function() {
+      // Find all the item links
+      const itemLinks = document.querySelectorAll('.item-list a');
+
+      // Add a click event listener to each link
+      itemLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+          // Prevent the default link behavior
+          event.preventDefault();
+
+          // Get the URL from the link's href attribute
+          const url = this.getAttribute('href');
+
+          // Show the loader by calling the function (or a modified version of it)
+          document.getElementById("loading").style.display = 'block';
+
+          // A small delay to allow the loader to be visible before navigating
+          setTimeout(() => {
+            window.location.href = url;
+          }, 200); // 200ms delay
+        });
+      });
+
+      // Hide the loader on the initial page load, since it's already there from the HTML
+      document.getElementById("loading").remove();
+
+    });
     </script>
 
 </body>
