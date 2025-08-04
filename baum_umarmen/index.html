@@ -43,19 +43,6 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-    window.addEventListener('pageshow', function(event) {
-        // The event.persisted property is true if the page is loaded from cache (e.g., back/forward button)
-        if (event.persisted) {
-            hideLoader();
-        }
-    });
-
-    // You also need to hide the loader on the initial page load of the subpage
-    document.addEventListener("DOMContentLoaded", function() {
-        hideLoader();
-    });
-    </script>
 </body>
 </body>
 </html>
