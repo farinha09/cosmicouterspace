@@ -198,6 +198,12 @@ body {
     body {
         margin: 10px;
     }
+
+    .content {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
     .header-left {
         font-size: 1em;
     }
