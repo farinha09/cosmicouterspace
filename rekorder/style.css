@@ -192,6 +192,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .image-grid{
+        padding-top: 30px; /* Adds padding above the grid */
+        padding-bottom: 30px; /* Adds padding below the grid */
+    }
+
     .footer-arrows {
         justify-content: right;
     }
@@ -218,6 +223,6 @@ body {
 
     .image-grid{
         padding-top: 30px; /* Adds padding above the grid */
-        padding-bottom: 30px; /* Adds padding below the grid */
+        padding-bottom: 10px; /* Adds padding below the grid */
     }
 }
