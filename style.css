@@ -23,12 +23,9 @@
   background-repeat: no-repeat;
 }
 
-/*
 html {
     overflow-x: hidden;
 }
-*/
-
 
 body {
     /* cursor: url('images/cursor_big.png'), auto; */
@@ -43,6 +40,7 @@ body {
     color: #000000; /* Text color */
     min-height: 100vh; /* Full viewport height */
     position: absolute; /* For star positioning */
+    overflow-x: hidden;
 }
 
 /* a { */
@@ -309,7 +307,6 @@ body {
         font-size: 35px;
         flex-direction: column;
         min-height: auto; /* Allow height to collapse */
-        overflow-x: hidden;
     }
 
     .sidebar {
