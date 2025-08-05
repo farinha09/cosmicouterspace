@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baum Umarmen Short Film</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            REKORDER<br>
+            NOMAD SCULPT<br>
+            2024
+        </div>
+
+        <div class="header-right">
+            <a href="../" class="arrow-button"><img src="images/button_pixel.svg" alt="back"></a>
+        </div>
+    </div>
+
+    <div class="image-singel-grid">
+        <img src="images/Unbenanntes_Projekt(2).jpg" onclick="openFullscreen(this.src)">
+        <img src="images/Rekorder4_0000_Layer_copy2.jpg" onclick="openFullscreen(this.src)">
+        <img src="images/Rekorder4_0001_Layer_copy3.jpg" onclick="openFullscreen(this.src)">
+        <img src="images/render.gif" onclick="openFullscreen(this.src)">
+        <img src="images/Kasettenrekorder1.png" onclick="openFullscreen(this.src)">
+        <img src="images/Rekorder9.png" onclick="openFullscreen(this.src)">
+        <img src="images/Unbenanntes_Projekt(2).png" onclick="openFullscreen(this.src)">
+        <img src="images/Rekorder4.png" onclick="openFullscreen(this.src)">
+    </div>
+
+    <div class="image-grid">
+            <img src="images/Unbenanntes_Projekt(2).jpg">
+            <img src="images/IMG_0719.PNG">
+        </div>
+
+    <div class="footer-arrows">
+        <a href="../" class="arrow-button"><img src="images/button_pixel.svg"></a>
+    </div>
+
+    <div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullscreen()">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
