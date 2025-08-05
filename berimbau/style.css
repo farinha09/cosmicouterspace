@@ -215,7 +215,7 @@ body {
         font-size: 1em;
     }
 
-    .image-grid {
+    .image-singel-grid {
         grid-template-columns: 1fr;
     }
 
