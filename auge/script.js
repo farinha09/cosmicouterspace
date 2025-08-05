@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     // List of your image filenames
     const images = [
-        'images/das_augegross0.jpg',
-        'images/das_augegross2.jpg',
-        'images/das_augegross3.jpg',
-        'images/das_augegross4.jpg',
-        'images/das_augegross5.jpg',
-        'images/das_augegross6.jpg',
-        'images/das_augegross7.jpg',
-        'images/das_augegross8.jpg',
-        'images/das_augegross9.jpg',
-        'images/das_augegross10.jpg',
-        'images/das_augegross11.jpg',
-        'images/das_augegross12.jpg',
-        'images/das_augegross13.jpg',
-        'images/das_augegross14.jpg',
-        'images/das_augegross15.jpg',
-        'images/das_augegross16.jpg',
+        'images/das_augegross0.webp',
+        'images/das_augegross2.webp',
+        'images/das_augegross3.webp',
+        'images/das_augegross4.webp',
+        'images/das_augegross5.webp',
+        'images/das_augegross6.webp',
+        'images/das_augegross7.webp',
+        'images/das_augegross8.webp',
+        'images/das_augegross9.webp',
+        'images/das_augegross10.webp',
+        'images/das_augegross11.webp',
+        'images/das_augegross12.webp',
+        'images/das_augegross13.webp',
+        'images/das_augegross14.webp',
+        'images/das_augegross15.webp',
+        'images/das_augegross16.webp',
     ];
 
     const imageContainer = document.querySelector('.image-container');
