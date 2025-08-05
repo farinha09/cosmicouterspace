@@ -148,7 +148,7 @@ a:visited {
 
 /* Media Query for typical iPad screen widths (e.g., 768px to 1024px or larger) */
 @media (max-width: 1000px) {
-    .image-singel-grid {
+    .image-grid {
         grid-template-columns: repeat(2, 1fr); /* 3 columns for landscape iPad */
         /* If you want 2 rows specifically, you don't need to specify grid-template-rows,
            as it will auto-arrange based on the number of items and columns.
@@ -184,7 +184,7 @@ a:visited {
         font-size: 1em;
     }
 
-    .image-singel-grid {
+    .image-grid {
         grid-template-columns: 1fr;
     }
 
@@ -199,7 +199,7 @@ a:visited {
         margin: 10px;
     }
 
-    .image-singel-grid {
+    .imagegrid {
         grid-template-columns: 1fr; /* 3 columns for landscape iPad */
         /* If you want 2 rows specifically, you don't need to specify grid-template-rows,
            as it will auto-arrange based on the number of items and columns.
