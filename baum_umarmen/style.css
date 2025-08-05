@@ -198,6 +198,14 @@ a:visited {
     body {
         margin: 10px;
     }
+
+    .image-singel-grid {
+        grid-template-columns: 1fr; /* 3 columns for landscape iPad */
+        /* If you want 2 rows specifically, you don't need to specify grid-template-rows,
+           as it will auto-arrange based on the number of items and columns.
+           Since you have 6 images, 3 columns will naturally result in 2 rows. */
+    }
+
     .header-left {
         font-size: 1em;
     }
