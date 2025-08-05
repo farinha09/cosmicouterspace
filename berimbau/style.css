@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .header {
     margin: 20px;
     display: flex;
@@ -67,12 +68,12 @@ body {
 
 }
 
+
 .image img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .image-grid-one{
@@ -84,6 +85,7 @@ body {
     flex-wrap: wrap; /* Allows items to wrap to the next line */
     justify-content: center; /* This centers the items horizontally */
     align-items: center; /* This is the key property for vertical alignment */
+    cursor: nwse-resize;
 }
 
 .image-grid-one img {
@@ -92,6 +94,10 @@ body {
     display: block;
     object-fit: cover;
     cursor: pointer;
+}
+
+.image-grid-one img:hover {
+    cursor: nwse-resize;
 }
 
 /* MODIFIED for grid layout */
@@ -114,7 +120,6 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .small-image-container {

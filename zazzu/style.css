@@ -71,6 +71,10 @@ body {
     cursor: pointer;
 }
 
+.image-grid img:hover {
+    cursor: nwse-resize;
+}
+
 .footer-arrows {
     display: flex;
     justify-content: flex-end;

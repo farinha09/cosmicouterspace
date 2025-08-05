@@ -91,6 +91,10 @@ a:visited {
     cursor: pointer;
 }
 
+.image-grid img:hover {
+    cursor: nwse-resize;
+}
+
 .image-grid-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

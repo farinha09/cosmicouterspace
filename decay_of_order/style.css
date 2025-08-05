@@ -71,6 +71,10 @@ body {
     cursor: pointer;
 }
 
+.image-grid img:hover {
+    cursor: nwse-resize;
+}
+
 .image-grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -88,7 +92,6 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .footer-arrows {

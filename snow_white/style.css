@@ -69,6 +69,10 @@ body {
     cursor: pointer;
 }
 
+.image-grid img:hover {
+    cursor: nwse-resize;
+}
+
 .scrollable-content {
     overflow-x: auto;         /* Enables horizontal scrolling */
     overflow-y: hidden;       /* Disables vertical scrolling */
