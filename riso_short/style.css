@@ -88,7 +88,25 @@ a:visited {
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
+}
+
+.image-grid img:hover {
+    cursor: nwse-resize;
+}
+
+.image-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*gap: 20px;*/
+    width: 100%;
+    height: auto;
+}
+
+.image-grid-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .footer-arrows {
