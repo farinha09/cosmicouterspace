@@ -1,3 +1,8 @@
+/*
+<img class="asyncImage" src="images/1_wortmarke-min.webp" data-src="images/1_wortmarke.webp"
+             alt="wortmarke" onclick="openFullscreen(this.src)">
+*/
+
 @font-face {
     font-family: 'custom_font'; /* Choose a name for your font */
     src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('truetype'); /* Path to your TTF file */
