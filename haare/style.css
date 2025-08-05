@@ -109,7 +109,6 @@ a:visited {
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .footer-arrows {

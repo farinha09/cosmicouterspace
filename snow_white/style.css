@@ -66,11 +66,6 @@ body {
     width: auto;                    /* Allows the width to scale proportionally */
     display: inline-block;          /* Change to inline-block for proper horizontal layout */
     object-fit: cover;
-    cursor: pointer;
-}
-
-.image-grid img:hover {
-    cursor: nwse-resize;
 }
 
 .scrollable-content {
