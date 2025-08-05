@@ -23,9 +23,12 @@
   background-repeat: no-repeat;
 }
 
+/*
 html {
     overflow-x: hidden;
 }
+*/
+
 
 body {
     /* cursor: url('images/cursor_big.png'), auto; */
