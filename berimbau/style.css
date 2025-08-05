@@ -226,14 +226,17 @@ body {
 
 /* Further optimization for very small screens if needed */
 @media (max-width: 480px) {
-    .hide-on-mobile {
-        display: none;
-    }
+
     .header-left {
         font-size: 1em;
     }
     .arrow-button img {
         width: 40px;
         height: 40px;
+    }
+
+    .image-grid {
+    padding-top: 30px; /* Adds padding above the grid */
+    padding-bottom: 30px; /* Adds padding below the grid */
     }
 }
