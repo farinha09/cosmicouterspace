@@ -304,13 +304,17 @@ body {
 /* Further optimization for very small screens if needed */
 @media (max-width: 390px) {
     .container {
-        font-size: 35px;
+        font-size: 33px;
         flex-direction: column;
         min-height: auto; /* Allow height to collapse */
     }
 
+    .content {
+        padding-bottom: 50px;
+    }
+
     .sidebar {
-        font-size: 35px;
+        font-size: 33px;
         position: relative; /* Change back to relative positioning for mobile */
         width: 100%; /* Full width on phone */
         height: auto; /* Auto height */
@@ -326,7 +330,7 @@ body {
     }
 
     .sidebar h1 {
-        font-size: 35px;
+        font-size: 33px;
         margin-bottom: -30px;
         white-space: normal; /* Allow text to wrap again */
         order: 0; /* NEW: Reset to default order for mobile */
@@ -341,11 +345,11 @@ body {
     }
 
     .sidebar .button {
-        font-size: 35px; /* Make sure this matches h1's font-size */
+        font-size: 33px; /* Make sure this matches h1's font-size */
     }
 
     .item-link:hover {
-        font-size: 35px; /* Overrides the hover font size and keeps the non-hover size */
+        font-size: 33px; /* Overrides the hover font size and keeps the non-hover size */
 
     }
 
