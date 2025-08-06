@@ -32,6 +32,17 @@ body {
     align-self: flex-start; /* Aligns the button to the top within its flex item */
 }
 
+.fade-in-container {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-container.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* NEW STYLES ADDED FOR THE IMAGE BUTTON */
 .arrow-button {
     display: block;

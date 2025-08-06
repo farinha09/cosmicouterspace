@@ -59,6 +59,17 @@ body {
     transform: scale(0.9);
 }
 
+.fade-in-container {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-container.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* MODIFIED for grid layout */
 .image-grid {
     display: grid;

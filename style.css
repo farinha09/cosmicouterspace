@@ -178,6 +178,17 @@ body {
     transform: scale(0.88); /* ADDED: Shrink by 5% */
 }
 
+.fade-in-container {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: opacity .1s ease-in-out;
+}
+
+.fade-in-container.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* Responsive Design for Phone Version */
 @media (max-width: 1100px) {
     .container {
