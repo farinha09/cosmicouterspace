@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="header">
         <div class="header-left">
             DAS AUGE<br>
@@ -19,14 +18,150 @@
             <a href="../" class="arrow-button"><img src="images/button_pixel_white_left_back.svg" alt="back"></a>
         </div>
     </div>
-
+    <!--
     <div class="image-viewer">
         <div class="image-container">
             </div>
         <button id="prevBtn" class="nav-button prev-button"><img src="images/button_pixel_red_left.svg" alt="Previous"></button>
         <button id="nextBtn" class="nav-button next-button"><img src="images/button_pixel_red_right.svg" alt="Next"></button>
     </div>
+     -->
+    <div class="flipbook-wrapper">
+        <div class="flipbook">
+            <div class="hard"><img src="images/das_augegross.webp" alt="" /></div>
+            <div class="hard"><img src="images/das_augegross2.webp" alt="" /></div>
+            <div>
+                <img src="images/das_augegross3.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross4.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross5.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross6.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross7.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross8.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross9.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross10.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross11.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross12.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross13.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross14.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross15.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross16.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross17.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross18.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross19.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross20.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross21.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross22.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross23.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross24.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross25.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross26.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross27.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross28.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross29.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross30.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross31.webp" alt="" />
+            </div>
+            <div>
+              <img src="images/das_augegross32.webp" alt="" />
+            </div>
+            <div class="hard"></div>
+            <div class="hard"></div>
+        </div>
+    </div>
 
     <script src="../script.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="../turn.js"></script>
+    <script>
+        function loadApp() {
+            var flipbook = $('.flipbook');
+
+            // Define the original aspect ratio
+            var originalWidth = 1234;
+            var originalHeight = 815;
+
+            // Function to resize the flipbook
+            function resizeFlipbook() {
+                var containerWidth = flipbook.parent().width();
+                var idealWidth = Math.min(containerWidth, originalWidth);
+                var idealHeight = idealWidth * (originalHeight / originalWidth);
+
+                flipbook.turn('size', idealWidth, idealHeight);
+            }
+
+            // Initialize turn.js
+            flipbook.turn({
+                width: originalWidth,
+                height: originalHeight,
+                autoCenter: true // This is key for centering
+            });
+
+            // Set the initial size and then bind the resize function to the window resize event
+            $(window).bind('resize', function() {
+                resizeFlipbook();
+            }).trigger('resize'); // Trigger the resize function once on load
+        }
+
+        // Load the app when the document is ready
+        $(document).ready(function() {
+            loadApp();
+        });
+    </script>
 </body>
 </html>

@@ -12,6 +12,7 @@ body {
     color: #ffffff;
     font-size: 30px;
     margin-bottom: 100px;
+    place-content: center;
 }
 
 .header {
@@ -195,6 +196,55 @@ body {
     opacity: 1;
 
 }
+
+/* Center the wrapper horizontally and vertically if you want */
+.flipbook-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.flipbook {
+    /* Let the turn.js script control the size, so we don't need a fixed width here */
+    align-items: center;
+}
+.flipbook .hard {
+    background: #000000 !important;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+}
+
+.flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 14px;
+}
+
+.flipbook .page {
+    background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.page img{
+	width: 100%;
+	object-fit: cover;
+	margin: auto;
+}
+
+.flipbook .page small{
+	font-size: 14px;
+    margin-bottom: 10px;
+}
+
 /* --- END NEW STYLES FOR FULLSCREEN MODAL --- */
 
 /* Media Query for typical iPad screen widths (e.g., 768px to 1024px or larger) */
