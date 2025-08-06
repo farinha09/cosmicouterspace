@@ -28,7 +28,10 @@ body {
 }
 
 .header-right {
-    align-self: flex-start; /* Aligns the button to the top within its flex item */
+    position: fixed; /* This anchors it to the viewport */
+    top: 20px;      /* Distance from the top of the viewport */
+    right: 20px;    /* Distance from the right of the viewport */
+    z-index: 100;   /* A higher z-index to ensure it's on top of everything */
 }
 
 .fade-in-container {
@@ -66,18 +69,19 @@ body {
 }
 
 .youtube-link {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    text-align: center; /* Still needed to center the text WITHIN the link's box */
     align-self: center; /* To align vertically if header has more height */
-    word-break: break-all;
+    word-break: break-all; /* ADD THIS LINE */
     overflow-wrap: break-word;
 }
 
 .youtube-link a {
-    color: #000;
+    color: #000000;
     text-decoration: underline;
-    font-style: italic;
+}
+
+.youtube-link a:hover {
+    color: #f51616;
+    text-decoration: underline;
 }
 
 a:visited {

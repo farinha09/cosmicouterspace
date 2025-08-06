@@ -29,7 +29,10 @@ body {
 }
 
 .header-right {
-    align-self: flex-start; /* Aligns the button to the top within its flex item */
+    position: fixed; /* This anchors it to the viewport */
+    top: 20px;      /* Distance from the top of the viewport */
+    right: 20px;    /* Distance from the right of the viewport */
+    z-index: 100;   /* A higher z-index to ensure it's on top of everything */
 }
 
 /* NEW STYLES ADDED FOR THE IMAGE BUTTON */
