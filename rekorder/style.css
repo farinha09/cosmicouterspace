@@ -85,8 +85,6 @@ body {
     justify-content: center; /* This centers the items horizontally */
     align-items: center; /* This is the key property for vertical alignment */
     padding-top: 80px; /* Adds padding above the grid */
-    padding-bottom: 80px; /* Adds padding below the grid */
-
 }
 
 .image-grid img {
@@ -94,7 +92,6 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .image-singel-grid img:hover {
