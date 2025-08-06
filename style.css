@@ -31,7 +31,7 @@ body {
     /* cursor: url('images/cursor_big.png'), auto; */
     margin: 0;
     font-family: 'vcr_font', monospace; /* A monospace font fits the aesthetic */
-    font-size: 60px; /* <-- Add or change this for base font size */
+    font-size: 100px; /* <-- Add or change this for base font size */
     background-image: url('images/version1.webp'); /* <--- Change this to your image path */
     background-size: cover; /* This makes the image cover the entire background */
     background-position: center; /* This centers the image */
@@ -97,12 +97,12 @@ body {
     order: 1; /* NEW: This will make the nav appear first */
     margin-top: 10px; /* Add some space between title and buttons if removed from h1 */
     position: relative;
-    top: 5px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
+    top: -13px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
                 Positive value moves it down. Negative value moves it up. */
 }
 
 .linkedin-btn {
-    order: 3; /* Places LINKEDIN last */
+    order: 1; /* Places LINKEDIN last */
 }
 
 .email-btn {
@@ -110,7 +110,7 @@ body {
 }
 
 .cv-btn {
-    order: 1; /* Places CV first */
+    order: 3; /* Places CV first */
 }
 
 .sidebar nav ul {
@@ -140,6 +140,7 @@ body {
     /*background-color: rgba(0, 0, 0, 0);*/
     /* color: rgba(255, 255, 255, 0.31); /* Dark text on hover for contrast */
     transform: scale(0.88); /* ADDED: Shrink by 5% */
+    color: rgba(0, 0, 0, 0.11);
 }
 
 /* Main Content Area */
@@ -153,7 +154,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: block;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     gap: 10px; /* Space between items */
 }
@@ -173,26 +174,34 @@ body {
 
 .item-link:hover {
     /*background-color: #f51616;*/
-    /* color: rgba(255, 255, 255, 0.31); */
-    font-size: 60px; /* <-- Add or change this */
-    transform: scale(0.88); /* ADDED: Shrink by 5% */
-}
+    color: rgba(0, 0, 0, 0.11);
+    font-size: 100px; /* <-- Add or change this */
+    transform: scale(0.95); /* ADDED: Shrink by 5% */
 
-.fade-in-container {
+}
+/*
+.item-link:hover::after {
+    content: "<"
+}
+ */
+
+.fade-in-item {
   opacity: 0;
-  transform: translate(0, 10vh);
-  transition: opacity .1s ease-in-out;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  /* Add a delay to each item for a staggered effect */
 }
 
-.fade-in-container.visible {
+.fade-in-item.visible {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translateY(0);
 }
+
 
 /* Responsive Design for Phone Version */
 @media (max-width: 1100px) {
     .container {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .sidebar {
@@ -204,7 +213,7 @@ body {
     }
 
     .item-link:hover {
-        font-size: 40px; /* <-- Add or change this */
+        font-size: 50px; /* <-- Add or change this */
     }
 
 }

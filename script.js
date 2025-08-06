@@ -212,3 +212,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeItems = document.querySelectorAll(".fade-in-item");
+    const delay = 100; // Delay in milliseconds (adjust as needed)
+
+    fadeItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("visible");
+        }, index * delay);
+    });
+});

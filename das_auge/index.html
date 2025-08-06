@@ -11,6 +11,7 @@
         <div class="header-left">
             DAS AUGE<br>
             INK<br>
+            PRESS TO FLIP<br>
             2025
         </div>
 
@@ -121,7 +122,6 @@
               <img src="images/das_augegross32.webp" alt="" />
             </div>
             <div class="hard"></div>
-            <div class="hard"></div>
         </div>
     </div>
 
@@ -129,39 +129,63 @@
     <script src="../jquery.js"></script>
     <script src="../turn.js"></script>
     <script>
-        function loadApp() {
-            var flipbook = $('.flipbook');
+    function loadApp() {
+        var flipbook = $('.flipbook');
 
-            // Define the original aspect ratio
-            var originalWidth = 1234;
-            var originalHeight = 815;
+        // Define the original aspect ratio
+        var originalWidth = 1234;
+        var originalHeight = 815;
 
-            // Function to resize the flipbook
-            function resizeFlipbook() {
-                var containerWidth = flipbook.parent().width();
-                var idealWidth = Math.min(containerWidth, originalWidth);
-                var idealHeight = idealWidth * (originalHeight / originalWidth);
+        // Function to resize the flipbook
+        function resizeFlipbook() {
+            var wrapperWidth = flipbook.parent().width();
+            var wrapperHeight = flipbook.parent().height();
 
-                flipbook.turn('size', idealWidth, idealHeight);
+            // Calculate the new dimensions based on the aspect ratio
+            var idealWidth = Math.min(wrapperWidth, originalWidth);
+            var idealHeight = idealWidth * (originalHeight / originalWidth);
+
+            if (idealHeight > wrapperHeight) {
+                idealHeight = wrapperHeight;
+                idealWidth = idealHeight * (originalWidth / originalHeight);
             }
 
-            // Initialize turn.js
-            flipbook.turn({
-                width: originalWidth,
-                height: originalHeight,
-                autoCenter: true // This is key for centering
-            });
-
-            // Set the initial size and then bind the resize function to the window resize event
-            $(window).bind('resize', function() {
-                resizeFlipbook();
-            }).trigger('resize'); // Trigger the resize function once on load
+            flipbook.turn('size', idealWidth, idealHeight);
         }
 
-        // Load the app when the document is ready
-        $(document).ready(function() {
-            loadApp();
+        // Initialize turn.js
+        flipbook.turn({
+            width: originalWidth,
+            height: originalHeight,
+            autoCenter: true
         });
+
+        // Add a click event listener to the flipbook container
+        flipbook.on('click', function(e) {
+            var page = $(this);
+            var clickX = e.pageX - page.offset().left;
+            var pageWidth = page.width() / 2;
+
+            // Check if the click is on the left or right half of the page
+            if (clickX < pageWidth) {
+                // Clicked on the left side, go to the previous page
+                page.turn('previous');
+            } else {
+                // Clicked on the right side, go to the next page
+                page.turn('next');
+            }
+        });
+
+        // Bind the resize function to the window resize event and trigger it on load
+        $(window).bind('resize', function() {
+            resizeFlipbook();
+        }).trigger('resize');
+    }
+
+    // Load the app when the document is ready
+    $(document).ready(function() {
+        loadApp();
+    });
     </script>
 </body>
 </html>
