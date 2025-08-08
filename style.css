@@ -93,13 +93,6 @@ body {
     padding-bottom: 2px; /* Optional: Adjust space between text and underline */
 }
 
-.sidebar nav {
-    order: 1; /* NEW: This will make the nav appear first */
-    margin-top: 10px; /* Add some space between title and buttons if removed from h1 */
-    position: relative;
-    top: -13px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
-                Positive value moves it down. Negative value moves it up. */
-}
 
 .linkedin-btn {
     order: 1; /* Places LINKEDIN last */
@@ -112,6 +105,15 @@ body {
 .cv-btn {
     order: 3; /* Places CV first */
 }
+
+.sidebar nav {
+    order: 1; /* NEW: This will make the nav appear first */
+    margin-top: 10px; /* Add some space between title and buttons if removed from h1 */
+    position: relative;
+    top: -18px; /* Adjust this value. Start with small increments (e.g., 1px, 2px, -1px, -2px).
+                Positive value moves it down. Negative value moves it up. */
+}
+
 
 .sidebar nav ul {
     list-style: none;
@@ -201,19 +203,27 @@ body {
   /* Your styles for large, curved monitors go here */
   /* For example: */
     .container {
-        font-size: 200px;
+        font-size: 170px;
+    }
+
+    .sidebar h1 {
+    font-size: 50px;
     }
 
     .sidebar {
-        font-size: 30px;
+        font-size: 50px;
+    }
+
+    .sidebar .button {
+        font-size: 50px;
     }
 
     .sidebar nav {
-        top: 13px;
+        top: 10px;
     }
 
     .item-link:hover {
-        font-size: 200px; /* <-- Add or change this */
+        font-size: 170px; /* <-- Add or change this */
     }
 
 }
@@ -229,7 +239,7 @@ body {
     }
 
     .sidebar nav {
-        top: 13px;
+        top: 8px;
     }
 
     .item-link:hover {
