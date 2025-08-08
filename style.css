@@ -197,6 +197,26 @@ body {
   transform: translateY(0);
 }
 
+@media (min-width: 2000px) {
+  /* Your styles for large, curved monitors go here */
+  /* For example: */
+    .container {
+        font-size: 200px;
+    }
+
+    .sidebar {
+        font-size: 30px;
+    }
+
+    .sidebar nav {
+        top: 13px;
+    }
+
+    .item-link:hover {
+        font-size: 200px; /* <-- Add or change this */
+    }
+
+}
 
 /* Responsive Design for Phone Version */
 @media (max-width: 1100px) {
