@@ -26,7 +26,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh; /* This ensures the main content takes up the full viewport height */
+    min-height: 80vh; /* This ensures the main content takes up the full viewport height */
 }
 
 .header {
