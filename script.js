@@ -127,47 +127,52 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById('nextBtn');
     let currentImageIndex = 0;
 
-    // Function to load and display the current image
-    const displayImage = (index) => {
-        // Clear previous content
-        imageContainer.innerHTML = '';
+    // --- UPDATED: ADDED NULL CHECK ---
+    // Only proceed if these elements exist on the current page
+    if (imageContainer && prevBtn && nextBtn) {
 
-        // Create a new image element
-        const img = document.createElement('img');
-        img.src = images[index];
+        // Function to load and display the current image
+        const displayImage = (index) => {
+            // Clear previous content
+            imageContainer.innerHTML = '';
 
-        // Add the image to the container
-        imageContainer.appendChild(img);
+            // Create a new image element
+            const img = document.createElement('img');
+            img.src = images[index];
 
-        // Update button visibility
-        updateButtons();
-    };
+            // Add the image to the container
+            imageContainer.appendChild(img);
 
-    // Function to update the visibility of the navigation buttons
-    const updateButtons = () => {
-        prevBtn.style.display = (currentImageIndex > 0) ? 'block' : 'none';
-        nextBtn.style.display = (currentImageIndex < images.length - 1) ? 'block' : 'none';
-    };
+            // Update button visibility
+            updateButtons();
+        };
 
-    // Event listener for the "Next" button
-    nextBtn.addEventListener('click', () => {
-        if (currentImageIndex < images.length - 1) {
-            currentImageIndex++;
+        // Function to update the visibility of the navigation buttons
+        const updateButtons = () => {
+            prevBtn.style.display = (currentImageIndex > 0) ? 'block' : 'none';
+            nextBtn.style.display = (currentImageIndex < images.length - 1) ? 'block' : 'none';
+        };
+
+        // Event listener for the "Next" button
+        nextBtn.addEventListener('click', () => {
+            if (currentImageIndex < images.length - 1) {
+                currentImageIndex++;
+                displayImage(currentImageIndex);
+            }
+        });
+
+        // Event listener for the "Previous" button
+        prevBtn.addEventListener('click', () => {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+                displayImage(currentImageIndex);
+            }
+        });
+
+        // Initial load: display the first image
+        if (images.length > 0) {
             displayImage(currentImageIndex);
         }
-    });
-
-    // Event listener for the "Previous" button
-    prevBtn.addEventListener('click', () => {
-        if (currentImageIndex > 0) {
-            currentImageIndex--;
-            displayImage(currentImageIndex);
-        }
-    });
-
-    // Initial load: display the first image
-    if (images.length > 0) {
-        displayImage(currentImageIndex);
     }
 });
 
@@ -192,8 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Add event listeners to the buttons
-    if (scrollLeftBtn && scrollRightBtn) {
+    // Add event listeners to the buttons only if they exist
+    if (scrollLeftBtn && scrollRightBtn && scrollableContent) {
         scrollLeftBtn.addEventListener('click', () => scrollContainer('left'));
         scrollRightBtn.addEventListener('click', () => scrollContainer('right'));
     }
