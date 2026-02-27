@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="favourite issues" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;farinha09&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/farinha09/cosmicouterspace.git&quot;,
+    &quot;accountId&quot;: &quot;415543f9-e963-4d2b-9a6f-291d26708e0a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="339APtvj1AzqVku2oqQ1hqRIv3T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/gabicudmani/Documents/my_projects/website/star-webpage"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/folc2/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/bg_images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="" />
+      <created>1758718893175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758718893175</updated>
+    </task>
+    <task id="LOCAL-00001" summary="haare to english">
+      <option name="closed" value="true" />
+      <created>1758721286993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758721286993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added new job in cv">
+      <option name="closed" value="true" />
+      <created>1769761411910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769761411910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="addition in snow whtie">
+      <option name="closed" value="true" />
+      <created>1769763835615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769763835615</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added new subpage: folc">
+      <option name="closed" value="true" />
+      <created>1772198971087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772198971087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add image and add favourite subpage">
+      <option name="closed" value="true" />
+      <created>1772201653164</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772201653164</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homepage:change order">
+      <option name="closed" value="true" />
+      <created>1772201970048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772201970048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="homepage:loading scree">
+      <option name="closed" value="true" />
+      <created>1772205637355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772205637355</updated>
+    </task>
+    <task id="LOCAL-00008" summary="watch on youtube">
+      <option name="closed" value="true" />
+      <created>1772206020286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772206020286</updated>
+    </task>
+    <task id="LOCAL-00009" summary="another favicon">
+      <option name="closed" value="true" />
+      <created>1772208734278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772208734278</updated>
+    </task>
+    <task id="LOCAL-00010" summary="new favicon">
+      <option name="closed" value="true" />
+      <created>1772209060859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772209060859</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new favicon">
+      <option name="closed" value="true" />
+      <created>1772209107847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772209107847</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="haare to english" />
+    <MESSAGE value="added new job in cv" />
+    <MESSAGE value="addition in snow whtie" />
+    <MESSAGE value="added new subpage: folc" />
+    <MESSAGE value="add image and add favourite subpage" />
+    <MESSAGE value="homepage:change order" />
+    <MESSAGE value="homepage:loading scree" />
+    <MESSAGE value="watch on youtube" />
+    <MESSAGE value="another favicon" />
+    <MESSAGE value="new favicon" />
+    <MESSAGE value="favourite issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="favourite issues" />
+  </component>
+</project>
