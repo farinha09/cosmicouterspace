@@ -224,3 +224,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }, index * delay);
     });
 });
+
+// Hide the loader when EVERYTHING (including images) is ready
+window.addEventListener("load", () => {
+    hideLoader();
+});
