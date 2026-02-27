@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="favourite issues">
-      <change beforePath="$PROJECT_DIR$/fountain_pen/images/back-button.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fountain_pen/images/button_pixel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fountain_pen/images/fountain_pen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fountain_pen/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fountain_pen/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="favourite issues" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +180,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772212058594</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="favourite issues">
+      <option name="closed" value="true" />
+      <created>1772212266973</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772212266973</updated>
+    </task>
+    <task id="LOCAL-00016" summary="favourite issues">
+      <option name="closed" value="true" />
+      <created>1772213053944</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1772213053944</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
