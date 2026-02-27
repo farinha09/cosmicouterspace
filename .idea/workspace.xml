@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="favourite issues" />
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="favourite issues">
+      <change beforePath="$PROJECT_DIR$/fountain_pen/images/back-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fountain_pen/images/button_pixel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fountain_pen/images/fountain_pen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fountain_pen/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fountain_pen/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,15 +46,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/gabicudmani/Documents/my_projects/website/star-webpage"
+    "last_opened_file_path": "/Users/gabicudmani/Documents/my_projects/website/star-webpage/fountain pen"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fountain pen" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/folc2/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images/bg_images" />
     </key>
   </component>
@@ -170,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772211875025</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="favourite issues">
+      <option name="closed" value="true" />
+      <created>1772212058594</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772212058594</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
