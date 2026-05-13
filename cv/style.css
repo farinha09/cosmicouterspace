@@ -43,7 +43,7 @@ main {
     font-size: 1.2em;
     line-height: 1.4;
     align-self: flex-start; /* This line was added */
-    padding-left: 2.5rem;   /* Adds padding to align with the main content's container */
+    /* padding-left: 2.5rem;   Adds padding to align with the main content's container */
     padding-right: 1rem;
 }
 
