@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="price">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orakel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/orakel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orakel/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/orakel/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/power/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="video scaling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -338,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787654426918</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="video scaling">
+      <option name="closed" value="true" />
+      <created>1787654976614</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1787654976614</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,6 +379,7 @@
     <MESSAGE value="lightspeed images fix" />
     <MESSAGE value="remove author from description" />
     <MESSAGE value="price" />
-    <option name="LAST_COMMIT_MESSAGE" value="price" />
+    <MESSAGE value="video scaling" />
+    <option name="LAST_COMMIT_MESSAGE" value="video scaling" />
   </component>
 </project>
