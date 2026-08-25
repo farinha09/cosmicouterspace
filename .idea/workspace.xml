@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="lightspeed images fix" />
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="price">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orakel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/orakel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orakel/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/orakel/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/power/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -317,7 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1787653839867</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="remove author from description">
+      <option name="closed" value="true" />
+      <created>1787654292311</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1787654292311</updated>
+    </task>
+    <task id="LOCAL-00033" summary="price">
+      <option name="closed" value="true" />
+      <created>1787654426918</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1787654426918</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,6 +374,8 @@
     <MESSAGE value="added astro to cv" />
     <MESSAGE value="added 3 new projects, orakel, power, lightspeed, made background white, new favicon" />
     <MESSAGE value="lightspeed images fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="lightspeed images fix" />
+    <MESSAGE value="remove author from description" />
+    <MESSAGE value="price" />
+    <option name="LAST_COMMIT_MESSAGE" value="price" />
   </component>
 </project>

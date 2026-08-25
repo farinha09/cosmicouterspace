@@ -230,3 +230,15 @@ body {
         height: 40px;
     }
 }
+
+/* --- RESPONSIVE VIDEO STYLES --- */
+.video-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
