@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="removed decay of order" />
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="title" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -349,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787659219356</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="title">
+      <option name="closed" value="true" />
+      <created>1787665736044</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1787665736044</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +372,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="haare to english" />
     <MESSAGE value="added new job in cv" />
     <MESSAGE value="addition in snow whtie" />
     <MESSAGE value="added new subpage: folc" />
@@ -389,6 +396,7 @@
     <MESSAGE value="price" />
     <MESSAGE value="video scaling" />
     <MESSAGE value="removed decay of order" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed decay of order" />
+    <MESSAGE value="title" />
+    <option name="LAST_COMMIT_MESSAGE" value="title" />
   </component>
 </project>
