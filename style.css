@@ -241,7 +241,7 @@ body {
 /* Zazzu Image - Top Right Corner */
 .hover-image-container img.img-zazzu {
     width: 700px;
-    top: 30%;
+    top: 20%;
     left: 50%;
     --translateX: 0%;
     --translateY: 0%;
@@ -250,7 +250,7 @@ body {
 /* Folc Image - Bottom Left Corner */
 .hover-image-container img.img-folc {
     width: 900px;
-    top: 30%;
+    top: 35%;
     left: 30%;
     --translateX: 0%;
     --translateY: 0%;
@@ -268,7 +268,7 @@ body {
 /* Folc Image - Bottom Left Corner */
 .hover-image-container img.img-orakel {
     width: 1000px;
-    top: 15%;
+    top: 10%;
     left: 30%;
     --translateX: 0%;
     --translateY: 0%;
@@ -382,6 +382,43 @@ body {
         font-size: 50px; /* <-- Add or change this */
     }
 
+}
+
+/* Hide hover image container by default on all screens / mobile */
+.hover-image-container {
+    display: none;
+}
+
+/* Enable hover image effect ONLY on screens wider than 768px with mouse hover */
+@media screen and (min-width: 1100px) and (hover: hover) {
+    .hover-image-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .hover-image-container img {
+        position: absolute;
+        opacity: 0;
+        transform: scale(0.96);
+        transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+        will-change: opacity, transform;
+        width: var(--width, 500px);
+        height: var(--height, auto);
+        top: var(--top, 50%);
+        left: var(--left, 50%);
+        transform: translate(var(--translateX, -50%), var(--translateY, -50%)) scale(0.96);
+    }
+
+    .hover-image-container img.active {
+        opacity: 1;
+        transform: translate(var(--translateX, -50%), var(--translateY, -50%)) scale(1);
+    }
 }
 
 /* Responsive Design for Phone Version */

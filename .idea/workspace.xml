@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="zazzu test hover">
-      <change afterPath="$PROJECT_DIR$/orakel/images/Screenshot-2026-09-08-at-19.45.15.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snow_white/images/mittel_0000_Levels-1.webp" afterDir="false" />
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="alle hover hinzufügen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788888195469</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="alle hover hinzufügen">
+      <option name="closed" value="true" />
+      <created>1788894945295</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1788894945295</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +408,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new subpage: folc" />
     <MESSAGE value="add image and add favourite subpage" />
     <MESSAGE value="homepage:change order" />
     <MESSAGE value="homepage:loading scree" />
@@ -428,6 +432,7 @@
     <MESSAGE value="title" />
     <MESSAGE value="zazzu test" />
     <MESSAGE value="zazzu test hover" />
-    <option name="LAST_COMMIT_MESSAGE" value="zazzu test hover" />
+    <MESSAGE value="alle hover hinzufügen" />
+    <option name="LAST_COMMIT_MESSAGE" value="alle hover hinzufügen" />
   </component>
 </project>
