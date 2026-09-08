@@ -234,3 +234,27 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener("load", () => {
     hideLoader();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.item-link');
+
+    links.forEach(link => {
+        const projectId = link.getAttribute('data-project');
+        const targetImg = document.getElementById(`img-${projectId}`);
+
+        if (!targetImg) return;
+
+        link.addEventListener('mouseenter', () => {
+            // Remove active class from any currently visible image
+            document.querySelectorAll('.hover-image-container img.active').forEach(img => {
+                img.classList.remove('active');
+            });
+            // Show the target image
+            targetImg.classList.add('active');
+        });
+
+        link.addEventListener('mouseleave', () => {
+            targetImg.classList.remove('active');
+        });
+    });
+});
