@@ -212,30 +212,128 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* Prevents images from interfering with mouse clicks */
+    pointer-events: none;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hide images by default and apply hardware-accelerated transitions */
 .hover-image-container img {
     position: absolute;
-    max-width: 600px; /* Adjust size to fit your layout */
-    max-height: 80vh;
-    object-fit: cover;
     opacity: 0;
     transform: scale(0.96);
     transition: opacity 0.25s ease-out, transform 0.25s ease-out;
-    will-change: opacity, transform; /* Boosts browser rendering speed */
+    will-change: opacity, transform;
+
+    /* Default size and fallback positioning (Center screen) */
+    width: var(--width, 500px);
+    height: var(--height, auto);
+    top: var(--top, 50%);
+    left: var(--left, 50%);
+    /* Use transform to offset center unless custom coordinates are used */
+    transform: translate(var(--translateX, -50%), var(--translateY, -50%)) scale(0.96);
 }
 
-/* Active class applied via JavaScript */
 .hover-image-container img.active {
     opacity: 1;
-    transform: scale(1);
+    transform: translate(var(--translateX, -50%), var(--translateY, -50%)) scale(1);
 }
+
+/* Zazzu Image - Top Right Corner */
+.hover-image-container img.img-zazzu {
+    width: 700px;
+    top: 30%;
+    left: 50%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-folc {
+    width: 900px;
+    top: 30%;
+    left: 30%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-lightspeed {
+    width: 700px;
+    top: 30%;
+    left: 50%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-orakel {
+    width: 1000px;
+    top: 15%;
+    left: 30%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-power {
+    width: 1000px;
+    top: 0%;
+    left: 20%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-maske {
+    width: 650px;
+    top: 30%;
+    left: 40%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+/* Folc Image - Bottom Left Corner */
+.hover-image-container img.img-riso_short {
+    width: 550px;
+    top: 5%;
+    left: 30%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+.hover-image-container img.img-snow_white {
+    width: 700px;
+    top: 20%;
+    left: 40%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+.hover-image-container img.img-das_auge {
+    width: 300px;
+    top: 40%;
+    left: 68%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+.hover-image-container img.img-fountain_pen {
+    width: 500px;
+    top: 10%;
+    left: 45%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+.hover-image-container img.img-rettungshund {
+    width: 660px;
+    top: 10%;
+    left: 45%;
+    --translateX: 0%;
+    --translateY: 0%;
+}
+
+
 
 @media (min-width: 2000px) {
   /* Your styles for large, curved monitors go here */
