@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="deactivate hover for phones and smaller screens">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c66b9a3e-f49f-41c3-937e-b1fdfd7c4ef0" name="Changes" comment="maske hover update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -400,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788904077803</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="maske hover update">
+      <option name="closed" value="true" />
+      <created>1788904251081</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1788904251081</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="homepage:change order" />
     <MESSAGE value="homepage:loading scree" />
     <MESSAGE value="watch on youtube" />
     <MESSAGE value="another favicon" />
@@ -440,6 +445,7 @@
     <MESSAGE value="zazzu test hover" />
     <MESSAGE value="alle hover hinzufügen" />
     <MESSAGE value="deactivate hover for phones and smaller screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="deactivate hover for phones and smaller screens" />
+    <MESSAGE value="maske hover update" />
+    <option name="LAST_COMMIT_MESSAGE" value="maske hover update" />
   </component>
 </project>
